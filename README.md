@@ -22,3 +22,27 @@ Arquivo **mcp.json (VS Code)** com configurações para testes locais:
 	"inputs": []
 }
 ```
+
+Arquivo **mcp.json (VS Code)** com configurações para testes com API publicada no Azure API Management (Subscription Key):
+
+```json
+{
+	"servers": {
+		"mcp-contagem": {
+			"url": "https://groffeapim01.azure-api.net/mcpcontagem00/mcp",
+			"type": "http",
+			"headers": {
+				"Ocp-Apim-Subscription-Key": "${input:apim-subscription-key}"
+			}
+		}
+	},
+	"inputs": [
+		{
+			"id": "apim-subscription-key",
+			"type": "promptString",
+			"description": "Subscription Key do Azure API Management",
+			"password": true
+		}
+	]
+}
+```
