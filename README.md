@@ -29,7 +29,7 @@ Arquivo **mcp.json (VS Code)** com configurações para testes com API publicada
 {
 	"servers": {
 		"mcp-contagem": {
-			"url": "https://groffeapim01.azure-api.net/mcpcontagem00/mcp",
+			"url": "ENDPOINT_APIM",
 			"type": "http",
 			"headers": {
 				"Ocp-Apim-Subscription-Key": "${input:apim-subscription-key}"
