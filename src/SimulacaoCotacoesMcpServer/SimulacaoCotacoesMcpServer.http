@@ -1,6 +1,0 @@
-@SimulacaoCotacoesMcpServer_HostAddress = http://localhost:5200
-
-GET {{SimulacaoCotacoesMcpServer_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
